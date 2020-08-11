@@ -3,18 +3,29 @@ import logo from './logo.svg';
 import './App.css';
 // import Basic_1 from './components/Basic_1'
 // import Basic_2 from './components/Basic_2'
-import BasicUseEffect from './components/BasicUseEffect'
+// import BasicUseEffect from './components/BasicUseEffect'
+// import TimerContainer from './components/TimerContainer'
+import ApiFetch from './components/ApiFetch';
+import AppContext from './contexts/AppContext';
+import B from './components/B';
+import BasicReducer from './components/BasicReducer';
+
 
 function App() {
   return (
+    <AppContext.Provider value={'value from App.js'}>
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         {/* <Basic_2 /> */}
-        <BasicUseEffect />
-        
+        {/* <BasicUseEffect /> */}
+        {/* <TimerContainer /> */}
+        {/* <ApiFetch />
+        <B /> */}
+        <BasicReducer />
       </header>
     </div>
+    </AppContext.Provider>
   );
 }
 
